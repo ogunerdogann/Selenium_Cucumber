@@ -96,4 +96,15 @@ public class AmazonStepDefinitions {
 
         }
     }
+
+    @Then("ilk ürüne click yapar")
+    public void ilk_ürüne_click_yapar() {
+        amazonPage.ilkUrunElementi.click();
+    }
+    @Then("acilan ürün isminin {string} icerdigini test eder")
+    public void acilan_ürün_isminin_icerdigini_test_eder(String arananKelime) {
+        String actualUrunIsmi = amazonPage.ilkUrunIsimElementi.getText();
+        Assert.assertTrue(actualUrunIsmi.contains(arananKelime));
+    }
+
 }

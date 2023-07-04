@@ -4,7 +4,7 @@ Feature: US1005 Kullanici butonlari test eder
   Scenario: TC11 Kullanici butonlari ve cikan yazilari test eder
 
 
-    Given Kullanici "herokuUrl" adresine gider
+    Given Kullanici "herokuUrl" ana sayfaya gider
     Then Add Element butonuna basar
     And Delete butonu görünür oluncaya kadar bekler
     And Delete butonunun görünür oldugunu test eder
