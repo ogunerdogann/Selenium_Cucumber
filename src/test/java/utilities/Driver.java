@@ -13,7 +13,7 @@ public class Driver {
    private static WebDriver driver;
    private Driver(){
         /*
-          Singleton Patteern kullanilarak istenmeyen yöntemlerle
+          Singleton Pattern kullanilarak istenmeyen yöntemlerle
           driver objesine erisilmesi engellenir
 
           Constructor'i private yaparak bu class'dan obje olusturularak class
